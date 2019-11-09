@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Фотоприложение Pink</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="visually-hidden">Страница с фотографиями пользователей</h1>
+      <nav class="main-nav">
+        <a href="index.html" class="header__logo">
+          <img class="header__logo-image" src="https://via.placeholder.com/150x50" alt="Логотип фотоприложения Pink">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link--active">Фотографии</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="https://htmlacademy.ru/" target="blank">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="intro intro--inner">
+        <h2 class="intro__title">Фотографии пользователей</h2>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="photo">
+        <h2 class="visually-hidden">Галерея постов</h2>
+        <header class="photo__header">
+          <p class="photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </header>
+        <div class="photo__list">
+          <article class="photo__item-panorama post">
+            <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
+            <a class="post__link post__link--panorama" href="#">
+              <img class="post__photo post__photo--panorama" src="https://via.placeholder.com/150x150" alt="Панорама пользователя Анна">
+            </a>
+            <blockquote class="post__description post__description--panorama">
+              <cite class="post__author post__author--panorama">Анна
+                <time class="post__time" datetime="2019-11-08T19:00">(5 минут назад)</time>
+              </cite>
+              <p class="post__text post__text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="post__like post__like--panorama">
+                <img class="post__heart" src="https://via.placeholder.com/15x15" alt="Иконка в виде сердца">
+                <span class="post__amount">Нравится: 215</span>
+              </div>
+            </blockquote>
+          </article>
+
+          <div class="photo__wrapper">
+            <article class="photo__item post">
+              <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
+              <a class="post__link" href="#">
+                <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Фото пользователя Левон">
+              </a>
+              <blockquote class="post__description">
+                <cite class="post__author">Левон
+                  <time class="post__time" datetime="2019-11-08T14:00">(5 часов назад)</time>
+                </cite>
+                <p class="post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <div class="post__like">
+                  <img class="post__heart" src="https://via.placeholder.com/15x15" alt="Иконка в виде сердца">
+                  <span class="post__amount">Нравится: 356</span>
+                </div>
+              </blockquote>
+            </article>
+
+            <article class="photo__item post">
+              <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
+              <a class="post__link" href="#">
+                <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Фото пользователя Антон">
+              </a>
+              <blockquote class="post__description">
+                <cite class="post__author">Антон
+                  <time class="post__time" datetime="2019-11-08T07:00">(12 часов назад)</time>
+                </cite>
+                <p class="post__text">Соседи будут рады!</p>
+                <div class="post__like">
+                  <img class="post__heart" src="https://via.placeholder.com/15x15" alt="Иконка в виде сердца">
+                  <span class="post__amount">Нравится: 666</span>
+                </div>
+              </blockquote>
+            </article>
+
+            <article class="photo__item post">
+              <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
+              <a class="post__link" href="#">
+                <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Фото пользователя Борис">
+              </a>
+              <blockquote class="post__description">
+                <cite class="post__author">Борис
+                  <time class="post__time" datetime="2019-11-07T23:00">(20 часов назад)</time>
+                </cite>
+                <p class="post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <div class="post__like">
+                  <img class="post__heart" src="https://via.placeholder.com/15x15" alt="Иконка в виде сердца">
+                  <span class="post__amount">Нравится: 215</span>
+                </div>
+              </blockquote>
+            </article>
+
+            <article class="photo__item post">
+              <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
+              <a class="post__link" href="#">
+                <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Фото пользователя Сергей">
+              </a>
+              <blockquote class="post__description">
+                <cite class="post__author">Сергей
+                  <time class="post__time" datetime="2019-11-07T18:00">(25 часов назад)</time>
+                </cite>
+                <p class="post__text">Самая кубанская в мире!</p>
+                <div class="post__like">
+                  <img class="post__heart" src="https://via.placeholder.com/15x15" alt="Иконка в виде сердца">
+                  <span class="post__amount">Нравится: 4</span>
+                </div>
+              </blockquote>
+            </article>
+
+            <article class="photo__item post">
+              <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
+              <a class="post__link" href="#">
+                <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Фото пользователя Максим">
+              </a>
+              <blockquote class="post__description">
+                <cite class="post__author">Максим
+                  <time class="post__time" datetime="2019-11-06T22:00">(40 часов назад)</time>
+                </cite>
+                <p class="post__text">Где снег-то?</p>
+                <div class="post__like">
+                  <img class="post__heart" src="https://via.placeholder.com/15x15" alt="Иконка в виде сердца">
+                  <span class="post__amount">Нравится: 150</span>
+                </div>
+              </blockquote>
+            </article>
+
+            <article class="photo__item post">
+              <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
+              <a class="post__link" href="#">
+                <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Фото пользователя Надежда">
+              </a>
+              <blockquote class="post__description">
+                <cite class="post__author">Надежда
+                  <time class="post__time" datetime="2019-11-06T17:00">(45 часов назад)</time>
+                </cite>
+                <p class="post__text">Всем GM и взаимные лайки!</p>
+                <div class="post__like">
+                  <img class="post__heart" src="https://via.placeholder.com/15x15" alt="Иконка в виде сердца">
+                  <span class="post__amount">Нравится: 2560</span>
+                </div>
+              </blockquote>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="index.html" class="footer__logo">
+        <img class="footer__logo-image" src="https://via.placeholder.com/150x50" alt="Логотип фотоприложения Pink">
+      </a>
+
+      <ul class="footer__list social-list">
+        <li class="social-list__item social-list__item--tw">
+          <a class="social-list__link" href="#">Твиттер</a>
+        </li>
+        <li class="social-list__item social-list__item--fb">
+          <a class="social-list__link" href="#">Фейсбук</a>
+        </li>
+        <li class="social-list__item social-list__item--you">
+          <a class="social-list__link" href="#">Ютюб</a>
+        </li>
+      </ul>
+
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="Сcылка на HTML Academy">
+          <img class="copyright__logo-image" src="https://via.placeholder.com/150x70" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
