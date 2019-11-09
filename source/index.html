@@ -2,11 +2,80 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Фотоприложение Pink</title>
   </head>
   <body>
+    <header class="header">
+      <h1 class="visually-hidden">Сайт фотоприложения Pink для раскрашивания серых будней</h1>
+      <nav class="main-nav">
+        <a class="header__logo">
+          <img class="header__logo-image" src="https://via.placeholder.com/150x50" alt="Логотип фотоприложения Pink">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list menu-list">
+          <li class="menu-list__item">
+            <a class="menu-list__link menu-list__link--active">Главная</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-list__link" href="https://htmlacademy.ru/" target="blank">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="intro">
+        <h2 class="visually-hidden">Фотоприложение Pink и где его скачать</h2>
+        <p class="intro__text">Взгляните на жизнь иначе!</p>
+        <div class="intro__download app">
+          <a class="app__link" href="https://www.apple.com/icloud/" target="blank">Скачать приложение</a>
+          <ul class="app__list store-list">
+            <li class="store-list__item">
+              <a class="store-list__link" href="https://www.apple.com/icloud/" target="blank" aria-label="Скачать приложение для Apple">
+                <img class="store-listr__image" src="https://via.placeholder.com/100x50" alt="Логотип Apple">
+              </a>
+            </li>
+            <li class="store-list__item">
+              <a class="store-list__link" href="https://play.google.com/store" target="blank" aria-label="Скачать приложение для Android">
+                <img class="store-listr__image" src="https://via.placeholder.com/100x50" alt="Логотип Android">
+              </a>
+            </li>
+            <li class="store-list__item">
+              <a class="store-list__link" href="https://www.microsoft.com/ru-ru/store/apps" target="blank" aria-label="Скачать приложение для Microsoft">
+                <img class="store-listr__imageheader__logo-image" src="https://via.placeholder.com/100x50" alt="Логотип Microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <main class="main">
+      <section class="info">
+        <h2 class="visually-hidden">Информация о фотоприложении Pink</h2>
+        <header class="info__header">
+          <p class="info__text">Устали от серости мегаполиса?</p>
+          <p class="info__text">Нам есть, что вам предложить!</p>
+        </header>
+        <ul class="info__list">
+          <li class="info__item info__item--black">
+            <h3 class="info__title">Поднимает настроение</h3>
+            <p class="info__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="info__item info__item--pink">
+            <h3 class="info__title">Меняет мир вокруг</h3>
+            <p class="info__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="info__item info__item--smile">
+            <h3 class="info__title">Заводит новых друзей</h3>
+            <p class="info__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
