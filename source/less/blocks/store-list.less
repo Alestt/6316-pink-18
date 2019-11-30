@@ -1,3 +1,17 @@
 .store-list {
   .list();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 205px;
+  margin: 0 auto;
+
+  @media (min-width: @desktop) {
+    margin-bottom: 33px;
+  }
+}
+
+.store-list__item {
+  margin-bottom: 10px;
 }
