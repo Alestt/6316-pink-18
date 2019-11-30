@@ -56,30 +56,30 @@
     background-color: @white;
   }
 
-   &::before {
-     transform: rotate(45deg);
-   }
+  &::before {
+    transform: rotate(45deg);
+  }
 
-   &::after {
-     transform: rotate(-45deg);
-   }
+  &::after {
+    transform: rotate(-45deg);
+  }
 
-   &:hover::before,
-   &:focus::before,
-   &:hover::after,
-   &:focus::after {
-     background-color: @pink;
-   }
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+    background-color: @pink;
+  }
 
-   &:active::before,
-   &:active::after {
-     background-color: @pink-opacity;
-   }
+  &:active::before,
+  &:active::after {
+    background-color: @pink-opacity;
+  }
 }
 
 .burger--nojs .main-nav__toggle {
   display: none;
-  }
+}
 
 @media (max-width: @max-desktop) {
   .burger--closed .menu-list,
