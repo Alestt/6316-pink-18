@@ -1,7 +1,6 @@
-
 .app__link {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
   padding-top: 15px;
   padding-bottom: 17px;
   font-size: 18px;
@@ -11,25 +10,31 @@
   border: 3px solid @white;
   border-radius: 50px;
 
+  &:hover,
+  &:focus {
+    color: @pink;
+    background-color: @white;
+  }
+
+  &:active {
+    color: @pink-opacity;
+    background-color: @white;
+  }
+
+  @media (min-width: @tablet) {
+    margin-bottom: 46px;
+  }
+
   @media (min-width: @desktop) {
-    margin-bottom: 72px;
+    width: 294px;
+    margin-bottom: 64px;
     font-size: 21px;
   }
 }
 
-.app__link:hover {
-  color: @pink;
-  background-color: @white;
-}
-
-.app__link:focus {
-  color: @pink-opacity;
-  background-color: @white;
-}
-
 .app__description {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
