@@ -5,6 +5,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: auto;
 
   @media (min-width: @tablet) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -18,6 +19,16 @@
 .header__logo-link {
   height: 23px;
   text-align: center;
+
+  &:hover[href] .header__icon,
+  &:focus[href] .header__icon {
+    fill: @pink;
+  }
+
+  &:active[href] .header__icon {
+    fill: @white;
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet) {
     height: 40px;

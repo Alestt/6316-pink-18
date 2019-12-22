@@ -1,0 +1,22 @@
+.copyright {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 140px;
+}
+
+.copyright__text {
+  margin: 0;
+  margin-right: 15px;
+}
+
+.copyright__link {
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
+    fill: @dark;
+  }
+
+  &:active .copyright__icon {
+    opacity: 0.3;
+  }
+}

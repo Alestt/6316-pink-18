@@ -1,7 +1,40 @@
 .social-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 180px;
   .list();
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.social-list__item {
+  margin-bottom: 10px;
 }
 
 .social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
   color: inherit;
+  border: 3px solid rgba(@dark, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border-color: @dark;
+  }
+
+  &:active {
+    border: 3px solid rgba(@dark, 0.1);
+  }
+
+  &:active .social-list__icon {
+    opacity: 0.3;
+  }
 }

@@ -1,0 +1,61 @@
+.scale {
+  display: block;
+  width: 240px;
+  height: 2px;
+  background-color: @black;
+
+  &--hidden {
+    display: none;
+
+    @media (min-width: @tablet) {
+      display: block;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    width: 202px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 288px;
+  }
+}
+
+.scale__slider {
+  position: absolute;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  background-color: @white;
+  border: solid 2px @pink;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--crop {
+    left: 82%;
+
+    @media (min-width: @desktop) {
+      left: 22%;
+    }
+  }
+
+  &--fill {
+    left: 15%;
+
+    @media (min-width: @desktop) {
+      left: 85%;
+    }
+  }
+
+  &--contrast {
+    left: 50%;
+
+    @media (min-width: @desktop) {
+      left: 50%;
+    }
+  }
+
+  &:active {
+    background-color: @pink;
+  }
+}

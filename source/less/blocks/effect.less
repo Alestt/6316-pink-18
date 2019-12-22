@@ -1,0 +1,84 @@
+.effect {
+  display: none;
+
+  @media (min-width: @tablet) {
+    display: block;
+    padding-top: 57px;
+    padding-bottom: 52px;
+    font-size: 14px;
+    line-height: 24px;
+    color: @dark;
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop) {
+    padding-top: 17px;
+    padding-bottom: 67px;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: transparent;
+  }
+}
+
+.effect__wrap {
+  width: 620px;
+  margin: 0 auto;
+
+  @media (min-width: @desktop) {
+    width: 940px;
+  }
+}
+
+.effect__about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 310px;
+  text-align: left;
+  background-image: url("../img/timer.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop) {
+    max-width: 575px;
+    padding-top: 98px;
+    padding-bottom: 58px;
+    padding-left: 360px;
+    background-size: 32%;
+  }
+}
+
+.effect__text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-right: 110px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: @black;
+
+  @media (min-width: @desktop) {
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+}
+
+.effect__description {
+  margin: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: @desktop) {
+    margin-bottom: 25px;
+    padding-right: 15px;
+  }
+}
+
+.effect__link {
+  display: block;
+  font: inherit;
+  color: @pink;
+  text-decoration: underline;
+}
