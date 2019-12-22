@@ -1,0 +1,100 @@
+.burger--closed .main-nav__toggle {
+  width: 50px;
+  height: 21px;
+  right: 20px;
+
+  @media (min-width: @tablet) {
+    top: 41px;
+    right: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: @white;
+    box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    background-color: @pink;
+    box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
+  }
+
+  &:active::before {
+    background-color: @pink-opacity;
+    box-shadow: 0 10px 0 0 @pink-opacity, 0 20px 0 0 @pink-opacity;
+  }
+}
+
+.burger--opened .main-nav__toggle {
+  width: 23px;
+  top: 30px;
+  right: 20px;
+
+  @media (min-width: @tablet) {
+    top: 45px;
+    right: 19px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 4px;
+    background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+    background-color: @pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @pink-opacity;
+  }
+}
+
+.burger--nojs .main-nav__toggle {
+  display: none;
+}
+
+@media (max-width: @max-desktop) {
+  .burger--closed .menu-list,
+  .burger--nojs .menu-list {
+    display: none;
+  }
+
+  .burger--opened.burger,
+  .burger--nojs.burger {
+    background-position: center 297px;
+  }
+
+  .burger--opened .main-nav__menu,
+  .burger--nojs .main-nav__menu {
+    border-bottom: 1px solid @black;
+  }
+
+  .burger--opened .main-nav__wrap,
+  .burger--nojs .main-nav__wrap {
+    background-color: @dark;
+  }
+}

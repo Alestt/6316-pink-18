@@ -1,0 +1,61 @@
+.buttons__item {
+  width: 280px;
+  padding: 15px 0;
+  font: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: 35px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media (min-width: @desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--submit {
+    color: @pink;
+    border: solid 3px @pink;
+
+    &:hover,
+    &:focus {
+      color: @white;
+      background-color: @pink;
+    }
+
+    &:active {
+      color: rgba(@white, 0.3);
+    }
+  }
+
+  &--reset {
+    color: rgba(@dark, 0.1);
+    border: solid 3px rgba(@dark, 0.1);
+
+    &:hover,
+    &:focus {
+      color: rgba(@dark, 0.3);
+      border: solid 3px rgba(@dark, 0.3);
+    }
+
+    &:active {
+      color: rgba(@white, 0.3);
+      border: solid 3px rgba(@dark, 0.3);
+      background-color: rgba(@dark, 0.3);
+    }
+  }
+
+  @media (min-width: @tablet) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 183px;
+  }
+}

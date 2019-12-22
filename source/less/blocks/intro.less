@@ -1,13 +1,113 @@
 .intro {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
   color: @white;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 940px;
+  }
+
+  &--inner {
+    align-items: center;
+  }
+
+  &--index {
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-position: 0 111px;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet) {
+      background-image: url("../img/iphone-hand-tablet@1x.png");
+      background-position: -38px 77px;
+    }
+
+    @media (min-width: @desktop) {
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-position: 8px 99px;
+    }
+  }
 }
 
 .intro__title {
+  margin: 0;
+  max-width: 230px;
+  padding-top: 23px;
+  padding-bottom: 78px;
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
+
+  @media (min-width: @tablet) {
+    max-width: 475px;
+    padding-top: 64px;
+    padding-bottom: 132px;
+    font-size: 50px;
+
+    &--competition {
+      padding-bottom: 63px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 658px;
+    padding-top: 61px;
+    padding-bottom: 87px;
+
+    &--competition {
+      max-width: 747px;
+    }
+  }
+}
+
+.intro__text {
+  max-width: 225px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding-top: 22px;
+
+  @media (min-width: @tablet) {
+    max-width: 190px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 88px;
+    padding-left: 54px;
+    font-size: 40px;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 240px;
+    margin-bottom: 34px;
+    padding-top: 102px;
+    padding-left: 29px;
+    font-size: 50px;
+  }
+}
+
+.intro__download {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 314px;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-bottom: 97px;
+  }
 }

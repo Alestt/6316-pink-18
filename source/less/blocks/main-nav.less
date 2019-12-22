@@ -1,0 +1,61 @@
+.main-nav {
+  background-color: @black-opacity;
+}
+
+.main-nav__wrap {
+  @media (min-width: @desktop) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.main-nav__menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  @media (min-width: @tablet) {
+    width: 620px;
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 147px;
+    margin: 0;
+    padding-left: 10px;
+    background-color: transparent;
+    border-bottom: none;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @desktop) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  .list();
+
+  @media (min-width: @desktop) {
+    margin: 0;
+    width: 620px;
+  }
+}

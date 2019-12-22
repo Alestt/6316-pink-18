@@ -1,22 +1,47 @@
 .app__link {
+  display: block;
+  margin-bottom: 31px;
+  padding-top: 15px;
+  padding-bottom: 17px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   color: @white;
-}
+  border: 3px solid @white;
+  border-radius: 50px;
 
-.app__link:hover {
-  color: @pink;
-}
+  &:hover,
+  &:focus {
+    color: @pink;
+    background-color: @white;
+  }
 
-.app__link:focus {
-  color: @pink-opacity;
+  &:active {
+    color: @pink-opacity;
+    background-color: @white;
+  }
+
+  @media (min-width: @tablet) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 294px;
+    margin-bottom: 64px;
+    font-size: 21px;
+  }
 }
 
 .app__description {
+  margin: 0;
+  margin-bottom: 26px;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   color: @white;
   text-align: center;
+
+  @media (min-width: @tablet) {
+    font-size: 18px;
+  }
 }

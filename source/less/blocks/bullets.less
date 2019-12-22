@@ -1,0 +1,34 @@
+.bullets__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.bullets__point {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: @dark;
+  border-radius: 50%;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.bullets__button:hover:not(.bullets__button--active) .bullets__point,
+.bullets__button:focus:not(.bullets__button--active) .bullets__point {
+  opacity: 0.6;
+}
+
+.bullets__button:active:not(.bullets__button--active) .bullets__point {
+  opacity: 0.1;
+}
+
+.bullets__button--active .bullets__point {
+  background-color: @white;
+  border: 3px solid @dark;
+  opacity: 1;
+}

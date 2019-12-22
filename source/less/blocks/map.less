@@ -1,0 +1,68 @@
+.map {
+  position: relative;
+  min-height: 200px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 33%;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+  }
+
+  @media (min-width: @tablet) {
+    min-height: 374px;
+  }
+
+  @media (min-width: @desktop) {
+    min-height: 501px;
+  }
+}
+
+.map__wrap {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map__image {
+  position: absolute;
+  bottom: -199px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+
+  &--small {
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
+
+  &--middle {
+    display: none;
+
+    @media (min-width: @tablet) {
+      display: block;
+      bottom: -490px;
+    }
+
+    @media (min-width: @desktop) {
+      display: none;
+    }
+  }
+
+  &--big {
+    display: none;
+
+    @media (min-width: @desktop) {
+      bottom: -490px;
+      display: block;
+    }
+  }
+}

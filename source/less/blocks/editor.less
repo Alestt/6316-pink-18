@@ -1,0 +1,62 @@
+.editor__photo {
+  &--small {
+    @media (min-width: @tablet) {
+      display: none;
+    }
+  }
+
+  &--middle {
+    display: none;
+
+    @media (min-width: @tablet) {
+      display: block;
+    }
+
+    @media (min-width: @desktop) {
+      display: none;
+    }
+  }
+
+  &--big {
+    display: none;
+
+    @media (min-width: @desktop) {
+      display: block;
+    }
+  }
+}
+
+.editor__form {
+  padding: 0;
+  padding-top: 40px;
+
+  @media (min-width: @tablet) {
+    width: 275px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop) {
+    width: 410px;
+  }
+}
+
+.editor__buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 40px 0;
+
+  @media (min-width: @tablet) {
+    padding-top: 63px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 136px;
+  }
+}
