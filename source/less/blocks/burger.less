@@ -1,7 +1,7 @@
 .burger--closed .main-nav__toggle {
   width: 50px;
   height: 26px;
-  right: 20px;
+  right: 0;
 
   @media (min-width: @tablet) {
     top: 41px;
@@ -26,8 +26,8 @@
   }
 
   &:active::before {
-    background-color: @pink-opacity;
-    box-shadow: 0 10px 0 0 @pink-opacity, 0 20px 0 0 @pink-opacity;
+    background-color: rgba(@pink, 0.3);
+    box-shadow: 0 10px 0 0 rgba(@pink, 0.3), 0 20px 0 0 rgba(@pink, 0.3);
   }
 }
 
@@ -70,7 +70,7 @@
 
   &:active::before,
   &:active::after {
-    background-color: @pink-opacity;
+    background-color: rgba(@pink, 0.3);
   }
 }
 

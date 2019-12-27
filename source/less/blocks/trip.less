@@ -1,0 +1,252 @@
+.trip {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  background-color: @light-grey;
+  border: none;
+
+  @media (min-width: @tablet) {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding-top: 45px;
+    background-color: @white;
+    border: solid 2px @grey;
+
+    &--app {
+      order: 2;
+    }
+
+    &--achievement {
+      margin-bottom: 57px;
+      order: 4;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &--app {
+      width: 435px;
+      margin: 0;
+      margin-bottom: 50px;
+      padding: 0;
+    }
+
+    &--achievement {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 52px;
+    }
+  }
+}
+
+.trip__legend {
+  position: relative;
+  top: 55px;
+  width: 240px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  color: @pink;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    line-height: 30px;
+    top: 0;
+
+    &--app {
+      width: 368px;
+    }
+
+    &--achievement {
+      width: 436px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &--app {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.trip__list {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  .list();
+  margin: 0 auto;
+  padding-bottom: 47px;
+  text-align: left;
+
+  @media (min-width: @tablet) {
+    width: 507px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 435px;
+
+    &--app {
+      padding-bottom: 0;
+      padding-left: 70px;
+      box-sizing: border-box;
+    }
+
+    &--achievement {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 820px;
+      padding-bottom: 7px;
+    }
+  }
+}
+
+.trip__item {
+  @media (min-width: @desktop) {
+    &--achievement {
+      width: 245px;
+      margin-bottom: 52px;
+    }
+
+    &--shark {
+      order: 1;
+      width: 265px;
+    }
+
+    &--beach {
+      order: 4;
+      width: 265px;
+    }
+
+    &--сhuck {
+      order: 2;
+    }
+
+    &--souvenir {
+      order: 5;
+    }
+
+    &--tower {
+      order: 3;
+      width: 210px;
+    }
+
+    &--hotel {
+      order: 6;
+      width: 210px;
+    }
+  }
+}
+
+.trip__item:not(:last-child) {
+  margin-bottom: 53px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @desktop) {
+    &--app {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.trip__label {
+  position: relative;
+  margin-left: 70px;
+  font-size: 18px;
+  line-height: 30px;
+  color: @dark;
+  cursor: pointer;
+
+  @media (min-width: @tablet) {
+    margin-left: 60px;
+  }
+
+  &--achievement::before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    background-color: @white;
+    border: solid 2px @grey;
+
+    @media (min-width: @tablet) {
+      left: -60px;
+    }
+  }
+
+  &--app::before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    left: -70px;
+    width: 37px;
+    height: 36px;
+    background-color: @white;
+    border: solid 2px @grey;
+    border-radius: 50%;
+
+    @media (min-width: @tablet) {
+      left: -60px;
+    }
+  }
+
+  &--achievement:hover::before,
+  &--app:hover::before {
+    border-color: @dark;
+  }
+
+  &--achievement:active::before,
+  &--app:active::before {
+    border-color: @pink;
+  }
+
+  &--achievement::after {
+    display: none;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: -61px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: @tablet) {
+      left: -51px;
+    }
+  }
+
+  &--app::after {
+    display: none;
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: -57px;
+    width: 15px;
+    height: 15px;
+    background-color: @pink;
+    border-radius: 50%;
+
+    @media (min-width: @tablet) {
+      left: -47px;
+    }
+  }
+}
+
+.trip__input--achievement:checked + .trip__label--achievement::after,
+.trip__input--app:checked + .trip__label--app::after {
+  display: block;
+}
+
+.trip__input--achievement:focus + .trip__label--achievement::before,
+.trip__input--app:focus + .trip__label--app::before {
+  border-color: @dark;
+}

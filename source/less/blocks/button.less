@@ -1,0 +1,39 @@
+.button {
+  width: 280px;
+  padding: 15px 0;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @white;
+  text-transform: uppercase;
+  background-color: @green;
+  border: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: @tablet) {
+    width: 300px;
+  }
+
+  @media (min-width: @desktop) {
+    &--sent {
+      width: 460px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @dark-green;
+  }
+
+  &:active {
+    color: rgba(@white, 0.3);
+    background-color: @dark-green;
+  }
+
+  &:disabled {
+    background-color: @grey;
+  }
+}
