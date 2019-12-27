@@ -1,0 +1,113 @@
+.modal {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  left: 0;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 24px;
+  color: @dark;
+  text-align: center;
+  background-color: @white;
+  box-shadow: 7px 15px rgba(0, 1, 1, 0.15);
+  box-sizing: border-box;
+
+  &--error {
+    display: none;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  &--sent {
+    display: none;
+    background-image: linear-gradient(to bottom, @white 55%, @light-grey 55%);
+  }
+
+  @media (min-width: @tablet) {
+    width: 460px;
+    padding-right: 75px;
+    padding-left: 75px;
+    font-size: 18px;
+
+    &--error {
+      padding-right: 80px;
+      padding-left: 80px;
+    }
+
+    &--sent {
+      background-image: linear-gradient(to bottom, @white 63%, @light-grey 63%);
+    }
+  }
+
+  @media (min-width: @desktop) {
+    width: 780px;
+    padding-right: 214px;
+    padding-left: 214px;
+
+    &--error {
+      background-image: linear-gradient(to bottom, @white 57%, @light-grey 57%);
+    }
+
+    &--sent {
+      padding-right: 0;
+      padding-left: 0;
+      background-image: linear-gradient(to bottom, @white 58%, @light-grey 58%);
+    }
+  }
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: @black;
+
+  @media (min-width: @tablet) {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    line-height: 40px;
+
+    &--sent {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 0;
+    margin-left: 0;
+
+    &--sent {
+      padding-right: 191px;
+      padding-left: 191px;
+    }
+  }
+}
+
+.modal__description {
+  margin: 0;
+  margin-bottom: 40px;
+
+  &--sent {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 105px;
+
+    &--sent {
+      margin-bottom: 85px;
+      padding-right: 193px;
+      padding-left: 193px;
+    }
+  }
+}
+
+.modal__button {
+  margin-bottom: 52px;
+}

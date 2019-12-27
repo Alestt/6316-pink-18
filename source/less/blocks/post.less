@@ -209,7 +209,6 @@
   display: flex;
   position: relative;
   padding: 0;
-  padding-left: 30px;
   padding-right: 30px;
   font-family: @main-font;
   font-size: 12px;
@@ -220,7 +219,25 @@
   color: @pink;
   background-color: transparent;
   border: none;
+
+  @media (min-width: @tablet) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.post__button {
+  margin-right: 19px;
+  padding: 0;
+  padding-left: 14px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+
+  &:focus {
+    outline: 2px solid #81b3d2;
+  }
 
   &::before {
     position: absolute;
@@ -235,11 +252,8 @@
   }
 
   @media (min-width: @tablet) {
-    padding-left: 0;
-
-    &::before {
-      display: none;
-    }
+    margin: 0;
+    padding-left: 16px;
 
     &::after {
       position: absolute;
@@ -251,6 +265,14 @@
       background-image: url("../img/icon-heart.svg");
       background-repeat: no-repeat;
       background-size: 13px 12px;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &--panorama {
+      margin-left: 15px;
     }
 
     &--panorama::before {
