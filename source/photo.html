@@ -99,9 +99,11 @@
             <h3 class="visually-hidden">Фотопост пользователя</h3>
             <a class="post__link post__link--panorama" href="#">
               <span class="post__hit">Панорама дня</span>
-              <img class="post__photo post__photo--panorama post__photo--panorama-small" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама пользователя Анна">
-              <img class="post__photo post__photo--panorama post__photo--panorama-middle" src="img/panorama-tablet@1x.jpg" width="660" height="509" alt="Панорама пользователя Анна">
-              <img class="post__photo post__photo--panorama post__photo--panorama-big" src="img/panorama-desktop@1x.jpg" width="1200" height="506" alt="Панорама пользователя Анна">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+                <img class="post__photo post__photo--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама пользователя Анна">
+              </picture>
             </a>
             <div class="post__description-panorama">
               <p class="post__author post__author--panorama">Анна
@@ -119,9 +121,11 @@
             <article class="photo__item post">
               <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
               <a class="post__link" href="#">
-                <img class="post__photo post__photo--small" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Левон">
-                <img class="post__photo post__photo--middle" src="img/photo-car-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя Левон">
-                <img class="post__photo post__photo--big" src="img/photo-car-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя Левон">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="post__photo" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Панорама пользователя Левон">
+                </picture>
               </a>
               <div class="post__description">
                 <p class="post__author">Левон
@@ -138,9 +142,11 @@
             <article class="photo__item post">
               <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
               <a class="post__link" href="#">
-                <img class="post__photo post__photo--small" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Антон">
-                <img class="post__photo post__photo--middle" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя Антон">
-                <img class="post__photo post__photo--big" src="img/photo-drumset-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя Антон">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Панорама пользователя Антон">
+                </picture>
               </a>
               <div class="post__description">
                 <p class="post__author">Антон
@@ -157,9 +163,11 @@
             <article class="photo__item post">
               <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
               <a class="post__link" href="#">
-                <img class="post__photo post__photo--small" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Борис">
-                <img class="post__photo post__photo--middle" src="img/photo-window-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя Борис">
-                <img class="post__photo post__photo--big" src="img/photo-window-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя Борис">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="post__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Панорама пользователя Борис">
+                </picture>
               </a>
               <div class="post__description">
                 <p class="post__author">Борис
@@ -176,9 +184,11 @@
             <article class="photo__item post">
               <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
               <a class="post__link" href="#">
-                <img class="post__photo post__photo--small" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Сергей">
-                <img class="post__photo post__photo--middle" src="img/photo-fair-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя Сергей">
-                <img class="post__photo post__photo--big" src="img/photo-fair-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя Сергей">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Панорама пользователя Сергей">
+                </picture>
               </a>
               <div class="post__description">
                 <p class="post__author">Сергей
@@ -195,9 +205,11 @@
             <article class="photo__item post">
               <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
               <a class="post__link" href="#">
-                <img class="post__photo post__photo--small" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Максим">
-                <img class="post__photo post__photo--middle" src="img/photo-pov-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя Максим">
-                <img class="post__photo post__photo--big" src="img/photo-pov-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя Максим">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                  <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Панорама пользователя Максим">
+                </picture>
               </a>
               <div class="post__description">
                 <p class="post__author">Максим
@@ -214,9 +226,11 @@
             <article class="photo__item post">
               <h3 class="visually-hidden">Фотопост нашего пользователя</h3>
               <a class="post__link" href="#">
-                <img class="post__photo post__photo--small" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото пользователя Надежда">
-                <img class="post__photo post__photo--middle" src="img/photo-wing-tablet@1x.jpg" width="300" height="300" alt="Фото пользователя Надежда">
-                <img class="post__photo post__photo--big" src="img/photo-wing-desktop@1x.jpg" width="300" height="400" alt="Фото пользователя Надежда">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Панорама пользователя Надежда">
+                </picture>
               </a>
               <div class="post__description">
                 <p class="post__author">Надежда
@@ -240,11 +254,11 @@
       <section class="upload">
         <h2 class="visually-hidden">Загрузка вашего фото с возможностью редактирования</h2>
         <div class="upload__wrap editor">
-          <div class="editor__picture">
-            <img class="editor__photo editor__photo--small" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото зимней дороги в фоторедакторе Pink">
-            <img class="editor__photo editor__photo--middle" src="img/photo-road-tablet@1x.jpg" width="300" height="400" alt="Фото зимней дороги в фоторедакторе Pink">
-            <img class="editor__photo editor__photo--big" src="img/photo-road-desktop@1x.jpg" width="300" height="400" alt="Фото зимней дороги в фоторедакторе Pink">
-          </div>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+            <img class="editor__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Фото зимней дороги в фоторедакторе Pink">
+          </picture>
           <form class="editor__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="editor__filter tools">
               <legend class="visually-hidden">Инструменты для редактирования вашего фото</legend>
@@ -401,6 +415,7 @@
         }
       });
     </script>
+    <script src="js/picturefill.min.js"></script>
 
   </body>
 </html>

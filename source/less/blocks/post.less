@@ -45,57 +45,25 @@
 }
 
 .post__photo {
-  &--small {
-    @media (min-width: @tablet) {
-      display: none;
-    }
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: @tablet) {
+    height: 300px;
   }
 
-  &--middle {
-    display: none;
-
-    @media (min-width: @tablet) {
-      display: block;
-      height: 300px;
-    }
-
-    @media (min-width: @desktop) {
-      display: none;
-    }
+  @media (min-width: @desktop) {
+    height: 400px;
   }
 
-  &--big {
-    display: none;
-
-    @media (min-width: @desktop) {
-      display: block;
-    }
-  }
-
-  &--panorama-small {
+  &--panorama {
     @media (min-width: @tablet) {
-      display: none;
-    }
-  }
-
-  &--panorama-middle {
-    display: none;
-
-    @media (min-width: @tablet) {
-      display: block;
       height: 509px;
     }
 
     @media (min-width: @desktop) {
-      display: none;
-    }
-  }
-
-  &--panorama-big {
-    display: none;
-
-    @media (min-width: @desktop) {
-      display: block;
+      height: 506px;
       margin: 0 auto;
     }
   }
