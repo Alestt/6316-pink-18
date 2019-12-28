@@ -1,28 +1,10 @@
 .editor__photo {
-  &--small {
-    @media (min-width: @tablet) {
-      display: none;
-    }
-  }
+  display: block;
+  width: 100%;
+  height: auto;
 
-  &--middle {
-    display: none;
-
-    @media (min-width: @tablet) {
-      display: block;
-    }
-
-    @media (min-width: @desktop) {
-      display: none;
-    }
-  }
-
-  &--big {
-    display: none;
-
-    @media (min-width: @desktop) {
-      display: block;
-    }
+  @media (min-width: @tablet) {
+    height: 400px;
   }
 }
 

@@ -32,37 +32,14 @@
 }
 
 .map__image {
+  display: block;
   position: absolute;
   bottom: -199px;
   left: 0;
   z-index: -1;
   width: 100%;
 
-  &--small {
-    @media (min-width: @tablet) {
-      display: none;
-    }
-  }
-
-  &--middle {
-    display: none;
-
-    @media (min-width: @tablet) {
-      display: block;
-      bottom: -490px;
-    }
-
-    @media (min-width: @desktop) {
-      display: none;
-    }
-  }
-
-  &--big {
-    display: none;
-
-    @media (min-width: @desktop) {
-      bottom: -490px;
-      display: block;
-    }
+  @media (min-width: @tablet) {
+    bottom: -490px;
   }
 }
