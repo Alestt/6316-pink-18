@@ -39,19 +39,16 @@
   }
 }
 
-.footer__logo:hover .footer__icon,
-.footer__logo:focus .footer__icon {
-  fill: @pink;
-}
-
-.footer__logo:active .footer__icon {
-  fill: @dark;
-}
-
 .footer__logo {
   margin-bottom: 42px;
+  fill: @dark;
+
+  &:hover {
+    fill: @pink;
+  }
 
   &:active {
+    fill: @dark;
     opacity: 0.3;
   }
 

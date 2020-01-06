@@ -25,15 +25,11 @@
   }
 }
 
-.tools__input:focus + .tools__item .tools__fill {
+.tools__input:focus + .tools__item .tools__icon {
   fill: rgba(@dark, 0.5);
 }
 
-.tools__item--active .tools__fill {
-  fill: @pink;
-}
-
-.tools__item:not(&--active) .tools__fill {
+.tools__item .tools__icon {
   fill: rgba(@dark, 0.3);
 
   @media (min-width: @tablet) {
@@ -41,11 +37,15 @@
   }
 }
 
-.tools__item:not(&--active):hover .tools__fill {
+.tools__item:hover .tools__icon {
   fill: rgba(@dark, 0.5);
 }
 
-.tools__item:active .tools__fill {
+.tools__item--active .tools__icon {
+  fill: @pink;
+}
+
+.tools__input:active + .tools__item .tools__icon {
   fill: @pink;
 }
 
