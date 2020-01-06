@@ -258,8 +258,8 @@
               <div class="tools__wrap">
                 <input class="visually-hidden tools__input" id="tool-crop" name="crop" type="checkbox">
                 <label class="tools__item tools__item--active" for="tool-crop">
-                  <span aria-label="Обрезать фото">
-                    <svg class="tools__icon tools__icon--crop" width="48" height="48">
+                  <span>
+                    <svg class="tools__icon tools__icon--crop" width="48" height="48" aria-label="Обрезать фото">
                       <use xlink:href="img/sprite.svg#icon-editor-crop"></use>
                     </svg>
                   </span>
@@ -271,8 +271,8 @@
 
                 <input class="visually-hidden tools__input" id="tool-fill" name="fill" type="checkbox">
                 <label class="tools__item" for="tool-fill">
-                  <span aria-label="Выбрать заливку фото">
-                    <svg class="tools__icon tools__icon--fill" width="48" height="48">
+                  <span>
+                    <svg class="tools__icon tools__icon--fill" width="48" height="48" aria-label="Выбрать заливку фото">
                       <use xlink:href="img/sprite.svg#icon-editor-fill"></use>
                     </svg>
                   </span>
@@ -284,8 +284,8 @@
 
                 <input class="visually-hidden tools__input" id="tool-contrast" name="contrast" type="checkbox">
                 <label class="tools__item" for="tool-contrast">
-                  <span aria-label="Выбрать контрастность фото">
-                    <svg class="tools__icon tools__icon--contrast" width="31.92" height="31.92">
+                  <span>
+                    <svg class="tools__icon tools__icon--contrast" width="31.92" height="31.92" aria-label="Выбрать контрастность фото">
                       <use xlink:href="img/sprite.svg#icon-editor-contrast"></use>
                     </svg>
                   </span>
@@ -351,24 +351,8 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.burger');
-      var navToggle = document.querySelector('.main-nav__toggle');
-
-      navMain.classList.remove('burger--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('burger--closed')) {
-          navMain.classList.remove('burger--closed');
-          navMain.classList.add('burger--opened');
-        } else {
-          navMain.classList.add('burger--closed');
-          navMain.classList.remove('burger--opened');
-        }
-      });
-    </script>
+    <script src="js/main-nav.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/svgxuse.min.js"></script>
-
   </body>
 </html>
