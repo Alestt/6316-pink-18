@@ -1,10 +1,16 @@
 .trip {
   width: 100%;
   margin: 0;
+  margin-top: 8px;
   padding: 0;
-  padding-top: 100px;
+  padding-top: 98px;
   background-color: @light-grey;
   border: none;
+
+  &--app {
+    margin-top: 2px;
+    padding-top: 94px;
+  }
 
   @media (min-width: @tablet) {
     width: 620px;
@@ -141,7 +147,11 @@
 }
 
 .trip__item:not(:last-child) {
-  margin-bottom: 53px;
+  margin-bottom: 50px;
+
+  &--app {
+    margin-bottom: 43px;
+  }
 
   @media (min-width: @tablet) {
     margin-bottom: 45px;

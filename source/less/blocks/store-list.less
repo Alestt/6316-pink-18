@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   width: 205px;
   margin: 0 auto;
+  margin-bottom: 16px;
 
   @media (min-width: @tablet) {
     margin-bottom: 20px;
@@ -20,5 +21,13 @@
 }
 
 .store-list__item {
-  margin-bottom: 10px;
+  &--android {
+    margin-top: 9px;
+    margin-left: -4px;
+  }
+
+  &--microsoft {
+    margin-top: 10px;
+    margin-right: 1px;
+  }
 }
