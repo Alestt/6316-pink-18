@@ -41,6 +41,10 @@
   flex-direction: column;
   margin-bottom: 34px;
 
+  @media (min-width: @tablet) {
+    margin-bottom: 36px;
+  }
+
   @media (min-width: @desktop) {
     padding: 0 100px;
     margin-bottom: 0;
@@ -56,7 +60,7 @@
 
   @media (min-width: @tablet) {
     font-size: 20px;
-    margin-bottom: 0;
+    margin-bottom: 1px;
   }
 
   @media (min-width: @desktop) {
@@ -83,7 +87,7 @@
 
   @media (min-width: @tablet) {
     order: -1;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 }
 
@@ -92,6 +96,10 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet) {
+    margin-left: -5px;
+  }
 
   @media (min-width: @desktop) {
     display: none;

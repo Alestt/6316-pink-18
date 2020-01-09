@@ -3,7 +3,7 @@
 
   @media (min-width: @tablet) {
     display: block;
-    padding-top: 57px;
+    padding-top: 58px;
     padding-bottom: 52px;
     font-size: 14px;
     line-height: 24px;
@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   max-width: 310px;
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 30px;
   padding-left: 310px;
   text-align: left;
@@ -68,7 +68,11 @@
 
 .effect__description {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet) {
+    letter-spacing: 0.3px;
+  }
 
   @media (min-width: @desktop) {
     margin-bottom: 25px;
@@ -79,6 +83,7 @@
 .effect__link {
   display: block;
   font: inherit;
+  letter-spacing: 0.25px;
   color: @pink;
   text-decoration: underline;
 }

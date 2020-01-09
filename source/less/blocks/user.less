@@ -7,8 +7,8 @@
   @media (min-width: @tablet) {
     width: 620px;
     margin: 0 auto;
-    margin-bottom: 50px;
-    padding-top: 40px;
+    margin-bottom: 53px;
+    padding-top: 36px;
     border: solid 2px @grey;
   }
 
@@ -32,7 +32,9 @@
 
     @media (min-width: @tablet) {
       order: 3;
-      padding-bottom: 35px;
+      margin-bottom: 51px;
+      padding-top: 36px;
+      padding-bottom: 21px;
     }
 
     @media (min-width: @desktop) {
@@ -49,7 +51,7 @@
     @media (min-width: @tablet) {
       order: 5;
       padding: 35px 0;
-      padding-bottom: 45px;
+      padding-bottom: 42px;
     }
 
     @media (min-width: @desktop) {
@@ -113,7 +115,7 @@
   @media (min-width: @tablet) {
     flex-direction: row;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 
     &:last-child {
       margin-bottom: 0;
@@ -124,7 +126,7 @@
       align-items: flex-start;
       width: 500px;
       margin: 0 auto;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
   }
 
@@ -148,9 +150,11 @@
   @media (min-width: @tablet) {
     padding: 0;
     margin-right: 20px;
+    margin-top: 9px;
+    margin-left: -1px;
 
     &--contacts {
-      margin-top: 15px;
+      margin-top: 10px;
       margin-right: 0;
       padding-left: 20px;
     }
@@ -171,11 +175,15 @@
   resize: none;
 
   @media (min-width: @tablet) {
+    min-height: 63px;
+
     &--phone {
+      padding-left: 18px;
       background: url("../img/icon-phone.svg") 96% no-repeat, linear-gradient(to right, @white 0%, @white 88%, @grey 88%, @grey 100%);
     }
 
     &--email {
+      padding-left: 18px;
       background: url("../img/icon-mail.svg") 96% no-repeat, linear-gradient(to right, @white 0%, @white 88%, @grey 88%, @grey 100%);
     }
   }
@@ -228,6 +236,11 @@
   border: solid 2px @grey;
   border-radius: 2px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet) {
+    min-height: 195px;
+    padding: 16px 18px;
+  }
 
   @media (min-width: @desktop) {
     min-height: 128px;

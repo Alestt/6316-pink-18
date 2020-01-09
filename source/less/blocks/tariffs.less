@@ -1,9 +1,9 @@
 .tariffs {
-  padding-top: 123px;
+  padding-top: 124px;
 
   @media (min-width: @tablet) {
     padding-top: 90px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: @desktop) {
@@ -50,9 +50,9 @@
   }
 
   @media (min-width: @tablet) {
-    width: 156px;
-    padding-top: 12px;
-    padding-bottom: 9px;
+    width: 155px;
+    padding-top: 14px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: @desktop) {
@@ -96,8 +96,8 @@
   transform: rotate(-45deg);
 
   @media (min-width: @tablet) {
-    top: 9px;
-    left: 9px;
+    top: 7px;
+    left: 10px;
     width: 26px;
     height: 27px;
   }
@@ -111,6 +111,7 @@
 
   @media (min-width: @tablet) {
     font-size: 16px;
+    margin-bottom: -2px;
   }
 
   @media (min-width: @desktop) {
@@ -141,7 +142,7 @@
   width: 280px;
   padding-top: 18px;
   padding-right: 18px;
-  padding-bottom: 7px;
+  padding-bottom: 4px;
   border: 2px solid @grey;
   box-sizing: border-box;
 
@@ -149,16 +150,9 @@
     padding-top: 21px;
   }
 
-  &:nth-child(3) {
-    padding-top: 12px;
-    padding-right: 20px;
-  }
-
   @media (min-width: @tablet) {
     width: 156px;
-    padding-top: 8px;
-    padding-right: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
 
   @media (min-width: @desktop) {
@@ -181,16 +175,25 @@
     margin-top: 2px;
     text-align: right;
 
+    &:nth-child(3) {
+      padding-top: 12px;
+      padding-right: 20px;
+    }
+
     @media (min-width: @tablet) {
-      padding-top: 9px;
+      padding-top: 10px;
       padding-bottom: 0;
       text-align: center;
+
+      &:nth-child(3) {
+        padding-right: 0;
+      }
     }
 
     &::before {
       position: absolute;
       content: attr(data-filter);
-      top: 13px;
+      top: 15px;
       left: 22px;
 
       @media (min-width: @tablet) {
@@ -205,7 +208,7 @@
   text-transform: none;
 
   @media (min-width: @tablet) {
-    margin-bottom: 7px;
+    margin-bottom: 0;
     padding-left: 15px;
   }
 

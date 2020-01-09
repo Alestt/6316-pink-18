@@ -15,8 +15,8 @@
   @media (min-width: @tablet) {
     width: 620px;
     margin: 0 auto;
-    margin-bottom: 50px;
-    padding-top: 45px;
+    margin-bottom: 57px;
+    padding-top: 43px;
     background-color: @white;
     border: solid 2px @grey;
 
@@ -88,6 +88,11 @@
 
   @media (min-width: @tablet) {
     width: 507px;
+    padding-bottom: 59px;
+
+    &--achievement {
+      padding-bottom: 53px;
+    }
   }
 
   @media (min-width: @desktop) {
@@ -109,7 +114,31 @@
   }
 }
 
+.trip__item:not(:last-child) {
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @desktop) {
+    &--app {
+      margin-bottom: 40px;
+    }
+  }
+}
+
 .trip__item {
+  &--app:not(:last-child) {
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: @tablet) {
+    &--achievement:not(:last-child) {
+      margin-bottom: 52px;
+    }
+  }
+
   @media (min-width: @desktop) {
     &--achievement {
       width: 245px;
@@ -146,24 +175,6 @@
   }
 }
 
-.trip__item:not(:last-child) {
-  margin-bottom: 50px;
-
-  &--app {
-    margin-bottom: 43px;
-  }
-
-  @media (min-width: @tablet) {
-    margin-bottom: 45px;
-  }
-
-  @media (min-width: @desktop) {
-    &--app {
-      margin-bottom: 40px;
-    }
-  }
-}
-
 .trip__label {
   position: relative;
   margin-left: 70px;
@@ -173,7 +184,7 @@
   cursor: pointer;
 
   @media (min-width: @tablet) {
-    margin-left: 60px;
+    margin-left: 62px;
   }
 
   &--achievement::before {
@@ -187,6 +198,7 @@
     border: solid 2px @grey;
 
     @media (min-width: @tablet) {
+      top: -8px;
       left: -60px;
     }
   }
@@ -203,6 +215,7 @@
     border-radius: 50%;
 
     @media (min-width: @tablet) {
+      top: -9px;
       left: -60px;
     }
   }
@@ -230,7 +243,8 @@
     background-position: 0 0;
 
     @media (min-width: @tablet) {
-      left: -51px;
+      top: 3px;
+      left: -50px;
     }
   }
 
@@ -246,6 +260,7 @@
     border-radius: 50%;
 
     @media (min-width: @tablet) {
+      top: 4px;
       left: -47px;
     }
   }
