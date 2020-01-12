@@ -34,6 +34,7 @@
     &--app {
       width: 435px;
       margin: 0;
+      margin-top: 5px;
       margin-bottom: 50px;
       padding: 0;
     }
@@ -41,7 +42,7 @@
     &--achievement {
       width: 100%;
       margin: 0;
-      margin-bottom: 52px;
+      margin-bottom: 57px;
     }
   }
 }
@@ -100,7 +101,7 @@
 
     &--app {
       padding-bottom: 0;
-      padding-left: 70px;
+      padding-left: 77px;
       box-sizing: border-box;
     }
 
@@ -114,32 +115,40 @@
   }
 }
 
-.trip__item:not(:last-child) {
-  margin-bottom: 50px;
+.trip__item {
+  &:not(:last-child) {
+    margin-bottom: 50px;
 
-  @media (min-width: @tablet) {
-    margin-bottom: 45px;
-  }
+    @media (min-width: @tablet) {
+      margin-bottom: 45px;
+    }
 
-  @media (min-width: @desktop) {
-    &--app {
-      margin-bottom: 40px;
+    @media (min-width: @desktop) {
+      &--app {
+        margin-bottom: 40px;
+      }
     }
   }
-}
 
-.trip__item {
   &--app:not(:last-child) {
     margin-bottom: 43px;
   }
 
   @media (min-width: @tablet) {
+    &--app:not(:last-child) {
+      margin-bottom: 45px;
+    }
+
     &--achievement:not(:last-child) {
       margin-bottom: 52px;
     }
   }
 
   @media (min-width: @desktop) {
+    &--app:not(:last-child) {
+      margin-bottom: 44px;
+    }
+
     &--achievement {
       width: 245px;
       margin-bottom: 52px;
@@ -185,6 +194,10 @@
 
   @media (min-width: @tablet) {
     margin-left: 62px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 60px;
   }
 
   &--achievement::before {

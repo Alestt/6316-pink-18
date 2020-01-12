@@ -11,7 +11,7 @@
   }
 
   @media (min-width: @desktop) {
-    background-image: linear-gradient(-5deg, @light-grey 73%, @white 0%);
+    background-image: linear-gradient(-4deg, @light-grey 71.4%, @white 0%);
   }
 }
 
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: @desktop) {
-    width: 940px;
+    width: 960px;
   }
 }
 
@@ -41,12 +41,20 @@
     padding-bottom: 22px;
     line-height: 48px;
   }
+
+  @media (min-width: @desktop) {
+    padding-top: 73px;
+  }
 }
 
 .info__text {
   max-width: 204px;
   margin: 0;
   margin-bottom: 26px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
   @media (min-width: @tablet) {
     max-width: 587px;
@@ -58,8 +66,15 @@
     }
   }
 
-  &:last-of-type {
-    margin-bottom: 0;
+  @media (min-width: @desktop) {
+    max-width: 737px;
+    margin-bottom: 8px;
+    margin-left: 19px;
+    font-size: 50px;
+
+    &--min {
+      line-height: 58px;
+    }
   }
 }
 
@@ -100,8 +115,8 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 830px;
-    padding-top: 60px;
+    width: 886px;
+    padding-top: 55px;
     padding-left: 0;
     text-align: center;
     background-image: none;
@@ -111,11 +126,12 @@
 .info__item {
   @media (min-width: @desktop) {
     width: 240px;
-    padding-top: 352px;
+    padding-top: 358px;
 
     &--black {
+      padding-left: 17px;
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
-      background-position: center 0;
+      background-position: -8px 0;
       background-repeat: no-repeat;
 
       @media (min-resolution: @retina-dppx) {
@@ -126,7 +142,7 @@
 
     &--pink {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
-      background-position: -21px 0;
+      background-position: -22px 0;
       background-repeat: no-repeat;
 
       @media (min-resolution: @retina-dppx) {
@@ -137,7 +153,7 @@
 
     &--smile {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
-      background-position: -20px 0;
+      background-position: -21px 0;
       background-repeat: no-repeat;
 
       @media (min-resolution: @retina-dppx) {
@@ -164,7 +180,7 @@
   }
 
   @media (min-width: @desktop) {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     font-size: 30px;
     line-height: 30px;
   }

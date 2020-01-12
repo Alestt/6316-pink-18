@@ -11,6 +11,16 @@
   border-radius: 35px;
   cursor: pointer;
 
+  @media (min-width: @tablet) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 183px;
+    padding-bottom: 16px;
+    padding-left: 5px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 14px;
 
@@ -53,13 +63,5 @@
       border: solid 3px rgba(@dark, 0.3);
       background-color: rgba(@dark, 0.3);
     }
-  }
-
-  @media (min-width: @tablet) {
-    width: 260px;
-  }
-
-  @media (min-width: @desktop) {
-    width: 183px;
   }
 }

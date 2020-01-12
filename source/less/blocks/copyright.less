@@ -3,14 +3,28 @@
   justify-content: space-around;
   align-items: center;
   max-width: 140px;
+
+  @media (min-width: @desktop) {
+    max-width: 160px;
+  }
 }
 
 .copyright__text {
   margin: 0;
   margin-right: 15px;
+
+  @media (min-width: @desktop) {
+    margin-right: 14px;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .copyright__link {
+  @media (min-width: @desktop) {
+    margin: 0;
+  }
+
   &:hover .copyright__icon,
   &:focus .copyright__icon {
     fill: @dark;

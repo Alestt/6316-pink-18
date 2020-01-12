@@ -1,5 +1,5 @@
 .post {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   text-align: left;
 
   @media (min-width: @tablet) {
@@ -93,7 +93,8 @@
   }
 
   @media (min-width: @desktop) {
-    right: 10.9%;
+    right: 10%;
+    top: 54px;
   }
 }
 
@@ -102,10 +103,10 @@
   flex-direction: column;
   min-height: 121px;
   margin-top: -6px;
-  padding-top: 15px;
+  padding-top: 26px;
   padding-right: 24px;
   padding-bottom: 20px;
-  padding-left: 19px;
+  padding-left: 18px;
   background-color: @light-grey;
   box-sizing: border-box;
 
@@ -127,7 +128,7 @@
   padding-top: 23px;
   padding-right: 15px;
   padding-bottom: 20px;
-  padding-left: 15px;
+  padding-left: 18px;
   background-color: @light-grey;
   box-sizing: border-box;
 
@@ -145,6 +146,10 @@
   @media (min-width: @desktop) {
     width: 940px;
     margin: 0 auto;
+    margin-left: 140px;
+    padding-top: 24px;
+    padding-right: 28px;
+    padding-bottom: 18px;
   }
 }
 
@@ -160,7 +165,7 @@
 }
 
 .post__text {
-  min-height: 26px;
+  min-height: 25px;
   margin: 0;
   margin-bottom: 8px;
   overflow-y: hidden;
@@ -271,6 +276,10 @@
   }
 
   @media (min-width: @desktop) {
+    &--panorama {
+      margin-left: 18px;
+    }
+
     &--panorama::after {
       right: 3px;
     }
