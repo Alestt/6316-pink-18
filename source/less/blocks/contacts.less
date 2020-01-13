@@ -7,7 +7,7 @@
   color: @dark;
 
   @media (min-width: @tablet) {
-    padding-bottom: 25px;
+    padding-bottom: 29px;
   }
 
   @media (min-width: @desktop) {
@@ -22,31 +22,39 @@
 
   @media (min-width: @tablet) {
     width: 620px;
+    padding-top: 50px;
   }
 
   @media (min-width: @desktop) {
-    width: 940px;
+    width: 960px;
+    padding-top: 66px;
   }
 }
 
 .contacts__text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  line-height: 31px;
 
   @media (min-width: @tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 46px;
     padding: 0 30px;
     font-size: 40px;
+    line-height: 44px;
   }
 
   @media (min-width: @desktop) {
+    margin-bottom: 56px;
+    margin-left: 20px;
     padding: 0 110px;
     font-size: 50px;
+    line-height: 58px;
   }
 }
 
 .contacts__list {
   .list();
+  line-height: 27px;
 
   @media (min-width: @tablet) {
     display: flex;
@@ -56,35 +64,46 @@
 }
 
 .contacts__item {
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  &--tel {
+    margin-bottom: 21px;
 
     @media (min-width: @tablet) {
-      margin-bottom: 40px;
+      margin-bottom: 46px;
     }
 
     @media (min-width: @desktop) {
       margin-bottom: 20px;
+      margin-left: 21px;
+    }
+  }
+
+  &--order {
+    margin-bottom: 26px;
+    margin-left: 5px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 46px;
+    }
+
+    @media (min-width: @desktop) {
+      order: 1;
+    }
+  }
+
+  &--address {
+    @media (min-width: @tablet) {
+      flex-grow: 1;
+      padding: 0 140px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-left: 2px;
+      padding: 0;
     }
   }
 
   @media (min-width: @tablet) {
     width: 300px;
-
-    &--address {
-      flex-grow: 1;
-      padding: 0 140px;
-    }
-  }
-
-  @media (min-width: @desktop) {
-    &--order {
-      order: 1;
-    }
-
-    &--address {
-      padding: 0;
-    }
   }
 }
 
@@ -92,8 +111,12 @@
   margin: 0;
   font-size: 18px;
 
+  @media (min-width: @tablet) {
+    margin-bottom: 4px;
+  }
+
   @media (min-width: @desktop) {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 
@@ -110,5 +133,9 @@
   &--mail:active {
     border-bottom: none;
     color: rgba(@dark, 0.3);
+  }
+
+  &--address {
+    line-height: 29px;
   }
 }

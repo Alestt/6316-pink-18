@@ -23,7 +23,7 @@
   &--index {
     @media (min-width: @tablet) {
       background-image: url("../img/iphone-hand-tablet@1x.png");
-      background-position: -38px 77px;
+      background-position: -40px 73px;
       background-repeat: no-repeat;
 
       @media (min-resolution: @retina-dppx) {
@@ -34,7 +34,7 @@
 
     @media (min-width: @desktop) {
       background-image: url("../img/iphone-hand-desktop@1x.png");
-      background-position: 8px 99px;
+      background-position: 27px 99px;
 
       @media (min-resolution: @retina-dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png");
@@ -61,7 +61,7 @@
 
   &--index {
     background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-position: 0 111px;
+    background-position: 0 107px;
     background-repeat: no-repeat;
 
     @media (min-resolution: @retina-dppx) {
@@ -78,30 +78,40 @@
 .intro__title {
   margin: 0;
   max-width: 230px;
-  padding-top: 23px;
-  padding-bottom: 50px;
+  padding-top: 27px;
+  padding-bottom: 80px;
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 30px;
+
+  &--competition {
+    padding-bottom: 54px;
+    line-height: 29px;
+  }
 
   @media (min-width: @tablet) {
     max-width: 475px;
-    padding-top: 64px;
-    padding-bottom: 132px;
+    padding-top: 71px;
+    padding-bottom: 142px;
     font-size: 50px;
+    line-height: 58px;
 
     &--competition {
-      padding-bottom: 63px;
+      padding-top: 70px;
+      padding-bottom: 79px;
+      line-height: 60px;
     }
   }
 
   @media (min-width: @desktop) {
     max-width: 658px;
-    padding-top: 61px;
-    padding-bottom: 87px;
+    padding-top: 67px;
+    padding-bottom: 102px;
+    padding-left: 20px;
 
     &--competition {
       max-width: 747px;
+      padding-top: 62px;
     }
   }
 }
@@ -109,26 +119,29 @@
 .intro__text {
   max-width: 225px;
   margin: 0 auto;
-  margin-bottom: 24px;
-  padding-top: 22px;
+  margin-bottom: 30px;
+  padding-top: 20px;
   padding-bottom: 285px;
+  line-height: 29px;
 
   @media (min-width: @tablet) {
     max-width: 190px;
     margin: 0;
-    margin-bottom: 20px;
-    padding-top: 88px;
-    padding-left: 54px;
+    margin-bottom: 29px;
+    padding-top: 93px;
     padding-bottom: 0;
+    padding-left: 54px;
     font-size: 40px;
+    line-height: 48px;
   }
 
   @media (min-width: @desktop) {
     max-width: 240px;
-    margin-bottom: 34px;
-    padding-top: 102px;
-    padding-left: 29px;
+    margin-bottom: 50px;
+    padding-top: 110px;
+    padding-left: 40px;
     font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -154,10 +167,11 @@
     width: 300px;
     margin: 0;
     padding-top: 0;
-    padding-bottom: 80px;
+    padding-bottom: 81px;
   }
 
   @media (min-width: @desktop) {
-    padding-bottom: 97px;
+    padding-bottom: 93px;
+    padding-left: 10px;
   }
 }

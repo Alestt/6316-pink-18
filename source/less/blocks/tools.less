@@ -10,14 +10,14 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 20px;
-  margin-right: 25px;
-  margin-bottom: 30px;
+  margin: 0 17px;
+  margin-right: 28px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet) {
     flex-direction: column;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   @media (min-width: @desktop) {
@@ -25,15 +25,11 @@
   }
 }
 
-.tools__input:focus + .tools__item .tools__fill {
+.tools__input:focus + .tools__item .tools__icon {
   fill: rgba(@dark, 0.5);
 }
 
-.tools__item--active .tools__fill {
-  fill: @pink;
-}
-
-.tools__item:not(&--active) .tools__fill {
+.tools__item .tools__icon {
   fill: rgba(@dark, 0.3);
 
   @media (min-width: @tablet) {
@@ -41,11 +37,15 @@
   }
 }
 
-.tools__item:not(&--active):hover .tools__fill {
+.tools__item:hover .tools__icon {
   fill: rgba(@dark, 0.5);
 }
 
-.tools__item:active .tools__fill {
+.tools__item--active .tools__icon {
+  fill: @pink;
+}
+
+.tools__input:active + .tools__item .tools__icon {
   fill: @pink;
 }
 
@@ -56,7 +56,11 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    height: 70px;
+    height: 73px;
+
+    &--contrast {
+      margin-top: -4px;
+    }
 
     &::after {
       position: absolute;
@@ -71,46 +75,52 @@
     @media (min-width: @desktop) {
       &::after {
         width: 410px;
-        bottom: 13px;
+        bottom: 17px;
       }
     }
   }
 }
 
 .tools__icon {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   cursor: pointer;
 
   @media (min-width: @tablet) {
+    margin-left: 3px;
+
     &--crop {
-      width: 22px;
-      height: 22px;
+      width: 24px;
+      height: 28px;
     }
 
     &--fill {
-      width: 24px;
-      height: 22px;
+      width: 26px;
+      height: 28px;
+      margin-top: 2px;
     }
 
     &--contrast {
       width: 16px;
       height: 16px;
-      margin-top: 2px;
-      margin-left: 4px;
+      margin-top: 4px;
+      margin-left: 8px;
     }
   }
 
   @media (min-width: @desktop) {
     margin-bottom: 0;
+    margin-left: 0;
 
     &--crop {
       width: 44px;
       height: 44px;
+      margin-top: -2px;
     }
 
     &--fill {
       width: 48px;
-      height: 43px;
+      height: 47px;
+      margin-top: -2px;
     }
 
     &--contrast {
@@ -129,8 +139,8 @@
 
   @media (min-width: @tablet) {
     position: relative;
-    margin-top: 10px;
-    margin-right: 20px;
+    margin-top: 13px;
+    margin-right: 18px;
   }
 
   @media (min-width: @desktop) {

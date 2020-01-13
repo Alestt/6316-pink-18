@@ -31,27 +31,39 @@
   border-radius: 50%;
   cursor: pointer;
 
+  @media (min-width: @tablet) {
+    top: -6px;
+  }
+
+  @media (min-width: @desktop) {
+    top: -7px;
+  }
+
   &--crop {
-    left: 82%;
+    left: 81%;
+
+    @media (min-width: @tablet) {
+      left: 72%;
+    }
 
     @media (min-width: @desktop) {
-      left: 22%;
+      left: 25%;
     }
   }
 
   &--fill {
-    left: 15%;
+    left: 13%;
 
     @media (min-width: @desktop) {
-      left: 85%;
+      left: 86%;
     }
   }
 
   &--contrast {
-    left: 50%;
+    left: 48%;
 
     @media (min-width: @desktop) {
-      left: 50%;
+      left: 56%;
     }
   }
 

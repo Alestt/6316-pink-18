@@ -2,8 +2,12 @@
   margin-bottom: 20px;
   text-align: left;
 
+  @media (min-width: @tablet) {
+    margin-bottom: 20px;
+  }
+
   @media (min-width: @desktop) {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
   }
 
   &--panorama {
@@ -85,11 +89,12 @@
   background-color: @pink;
 
   @media (min-width: @tablet) {
-    top: 55px;
+    top: 57px;
   }
 
   @media (min-width: @desktop) {
-    right: 10.9%;
+    right: 10%;
+    top: 54px;
   }
 }
 
@@ -98,18 +103,18 @@
   flex-direction: column;
   min-height: 121px;
   margin-top: -6px;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  padding-top: 26px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 18px;
   background-color: @light-grey;
   box-sizing: border-box;
 
   @media (min-width: @tablet) {
     min-height: 155px;
-    padding-top: 31px;
+    padding-top: 29px;
     padding-right: 29px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     padding-left: 28px;
   }
 }
@@ -120,10 +125,10 @@
   width: 280px;
   margin: 0 auto;
   margin-top: -6px;
-  padding-top: 20px;
+  padding-top: 23px;
   padding-right: 15px;
   padding-bottom: 20px;
-  padding-left: 15px;
+  padding-left: 18px;
   background-color: @light-grey;
   box-sizing: border-box;
 
@@ -132,21 +137,30 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 620px;
-    padding-top: 25px;
+    padding-top: 30px;
     padding-right: 29px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     padding-left: 27px;
   }
 
   @media (min-width: @desktop) {
     width: 940px;
     margin: 0 auto;
+    margin-left: 140px;
+    padding-top: 24px;
+    padding-right: 28px;
+    padding-bottom: 18px;
   }
 }
 
 .post__author {
   margin: 0;
+  margin-bottom: -1px;
   font-weight: 700;
+
+  @media (min-width: @desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .post__time {
@@ -156,17 +170,22 @@
 }
 
 .post__text {
-  min-height: 48px;
+  min-height: 25px;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   overflow-y: hidden;
+
+  @media (min-width: @tablet) {
+    min-height: 50px;
+    margin-bottom: 10px;
+  }
 }
 
 .post__text-panorama {
   overflow-y: hidden;
   max-height: 100px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   @media (min-width: @tablet) {
     order: 3;
@@ -192,6 +211,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 0;
+    padding-left: 1px;
   }
 }
 
@@ -261,8 +281,20 @@
   }
 
   @media (min-width: @desktop) {
+    &--panorama {
+      margin-left: 18px;
+    }
+
     &--panorama::after {
       right: 3px;
     }
+  }
+}
+
+.post__amount {
+  margin-left: -2px;
+
+  @media (min-width: @tablet) {
+    margin-top: 1px;
   }
 }

@@ -37,12 +37,12 @@
   height: 23px;
   text-align: center;
 
-  &:hover[href] .header__icon,
-  &:focus[href] .header__icon {
+  &:hover[href] .header__logo,
+  &:focus[href] .header__logo {
     fill: @pink;
   }
 
-  &:active[href] .header__icon {
+  &:active[href] .header__logo {
     fill: @white;
     opacity: 0.3;
   }
@@ -55,6 +55,7 @@
 .header__logo {
   width: 75px;
   height: 23px;
+  fill: @white;
 
   &--text {
     @media (min-width: @tablet) {
