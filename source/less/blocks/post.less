@@ -1,5 +1,5 @@
 .post {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   text-align: left;
 
   @media (min-width: @tablet) {
@@ -7,7 +7,7 @@
   }
 
   @media (min-width: @desktop) {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
   }
 
   &--panorama {
@@ -155,7 +155,12 @@
 
 .post__author {
   margin: 0;
+  margin-bottom: -1px;
   font-weight: 700;
+
+  @media (min-width: @desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .post__time {

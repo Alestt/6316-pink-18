@@ -4,9 +4,10 @@
   flex-wrap: wrap;
   width: 180px;
   .list();
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
   @media (min-width: @tablet) {
+    width: 178px;
     margin-bottom: 0;
   }
 }
@@ -19,8 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 46px;
-  height: 46px;
+  width: 45px;
+  height: 45px;
   color: inherit;
   border: 3px solid rgba(@dark, 0.1);
   border-radius: 50%;
@@ -43,10 +44,15 @@
   fill: @pink;
 
   &--fb {
-    margin-top: -5px;
+    width: 9px;
+    height: 17px;
+    margin-top: -6px;
+    margin-left: -1px;
   }
 
   &-you {
-    margin-top: -6px;
+    width: 14px;
+    height: 14px;
+    margin-top: -2px;
   }
 }
