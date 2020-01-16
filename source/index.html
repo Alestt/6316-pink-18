@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>Pink: фотоприложение</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="header burger burger--closed burger--nojs">
       <h1 class="visually-hidden">Сайт фотоприложения Pink для раскрашивания серых будней</h1>
       <nav class="main-nav">
@@ -15,13 +18,13 @@
           <div class="main-nav__menu">
             <a class="header__logo-link" aria-label="Логотип фотоприложения Pink">
               <svg class="header__logo header__logo--text" width="74.426" height="22.859">
-                <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
+                <use xlink:href="img/sprite.svg#icon-logo-pink-white-mobile"></use>
               </svg>
               <svg class="header__logo header__logo--glasses" width="146.3" height="40.375">
-                <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+                <use xlink:href="img/sprite.svg#icon-logo-pink-white-tablet"></use>
               </svg>
               <svg class="header__logo header__logo--glasses-decore" width="146.3" height="40.375">
-                <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+                <use xlink:href="img/sprite.svg#icon-logo-pink-white-desktop"></use>
               </svg>
             </a>
             <button class="main-nav__toggle" type="button">
@@ -56,21 +59,21 @@
               <li class="store-list__item">
                 <a class="store-list__link" href="https://www.apple.com/icloud/" target="blank" aria-label="Скачать приложение для Apple">
                   <svg width="46.21" height="56.753">
-                    <use xlink:href="img/sprite.svg#logo-apple"></use>
+                    <use xlink:href="img/sprite.svg#icon-logo-apple"></use>
                   </svg>
                 </a>
               </li>
               <li class="store-list__item store-list__item--android">
                 <a class="store-list__link" href="https://play.google.com/store" target="blank" aria-label="Скачать приложение для Android">
                   <svg width="42.084" height="47.041">
-                    <use xlink:href="img/sprite.svg#logo-android"></use>
+                    <use xlink:href="img/sprite.svg#icon-logo-android"></use>
                   </svg>
                 </a>
               </li>
               <li class="store-list__item store-list__item--microsoft">
                 <a class="store-list__link" href="https://www.microsoft.com/ru-ru/store/apps" target="blank" aria-label="Скачать приложение для Microsoft">
                   <svg width="43.922" height="41.992">
-                    <use xlink:href="img/sprite.svg#logo-microsoft"></use>
+                    <use xlink:href="img/sprite.svg#icon-logo-microsoft"></use>
                   </svg>
                 </a>
               </li>
@@ -293,10 +296,10 @@
       <div class="footer__wrap">
         <a class="footer__logo" href="index.html" aria-label="Логотип фотоприложения Pink">
           <svg class="footer__img footer__img--glasses" width="146.3" height="40.375">
-            <use  xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+            <use  xlink:href="img/sprite.svg#icon-logo-pink-blue-mobile"></use>
           </svg>
           <svg class="footer__img footer__img--glasses-decore" width="146.3" height="40.375">
-            <use  xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+            <use  xlink:href="img/sprite.svg#icon-logo-pink-blue-desktop"></use>
           </svg>
         </a>
 
@@ -328,7 +331,7 @@
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="Сcылка на HTML Academy">
             <svg class="copyright__icon" width="26.943" height="34.09">
-              <use  xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use  xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
