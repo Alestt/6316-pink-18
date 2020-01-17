@@ -7,7 +7,10 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var minify = require("gulp-csso");
+var cssmin = require("gulp-csso");
+var jsmin = require("gulp-uglify");
+var pipeline = require("readable-stream").pipeline;
+var htmlmin = require("gulp-htmlmin");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -36,7 +39,7 @@ gulp.task("copy", function() {
 });
 
 
-//Отслеживание ошибок, препроцессор, префиксы, минификация
+//Отслеживание ошибок, препроцессор, префиксы, минификация css
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
@@ -45,7 +48,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(minify())
+    .pipe(cssmin ())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -80,6 +83,24 @@ gulp.task("sprite", function() {
     .pipe(gulp.dest("build/img"));
 });
 
+//Минификация js
+gulp.task("jsmin", function() {
+  return pipeline(gulp.src("source/js/*.js"),
+    jsmin(),
+    rename({
+      suffix: ".min"
+    }),
+    gulp.dest("build/js")
+  );
+});
+
+//Минификация html
+gulp.task("htmlmin", function () {
+  return gulp.src("source/*.html")
+  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(gulp.dest("build"));
+})
+
 // Постпроцессинг HTML-файлов
 gulp.task("html", function() {
   return gulp.src("source/*.html")
@@ -94,6 +115,8 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "css",
+  "jsmin",
+  "htmlmin",
   "images",
   "webp",
   "sprite",
