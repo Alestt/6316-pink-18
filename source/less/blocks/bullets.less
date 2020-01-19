@@ -1,46 +1,25 @@
 .bullets__button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
   padding: 0;
-  border: none;
-  background-color: transparent;
-
-  &:not(:last-child) {
-    margin-right: 15px;
-
-    @media (min-width: @tablet) {
-      margin-right: 17px;
-    }
-  }
-
-  &--1 {
-    margin-left: -5px;
-  }
-
-  &--2 {
-    margin-right: 20px;
-  }
-}
-
-.bullets__point {
-  display: block;
-  width: 6px;
-  height: 6px;
   background-color: @dark;
+  border: 3px solid @white;
   border-radius: 50%;
   opacity: 0.3;
   cursor: pointer;
 }
 
-.bullets__button:hover:not(.bullets__button--active) .bullets__point,
-.bullets__button:focus:not(.bullets__button--active) .bullets__point {
-  opacity: 0.6;
-}
-
-.bullets__button:active:not(.bullets__button--active) .bullets__point {
-  opacity: 0.1;
-}
-
-.bullets__button--active .bullets__point {
+.bullets__button--active  {
   background-color: @white;
   border: 3px solid @dark;
   opacity: 1;
+}
+
+.bullets__button:hover:not(.bullets__button--active) {
+  opacity: 0.6;
+}
+
+.bullets__button:focus:not(.bullets__button--active) {
+  opacity: 0.1;
 }
