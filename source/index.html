@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>Pink: фотоприложение</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -17,13 +20,13 @@
         <div class="main-nav__wrap">
           <div class="main-nav__menu">
             <a class="header__logo-link" aria-label="Логотип фотоприложения Pink">
-              <svg class="header__logo header__logo--text" width="74.426" height="22.859">
+              <svg class="header__logo header__logo--text" width="74" height="23">
                 <use xlink:href="img/sprite.svg#icon-logo-pink-white-mobile"></use>
               </svg>
-              <svg class="header__logo header__logo--glasses" width="146.3" height="40.375">
+              <svg class="header__logo header__logo--glasses" width="146" height="40">
                 <use xlink:href="img/sprite.svg#icon-logo-pink-white-tablet"></use>
               </svg>
-              <svg class="header__logo header__logo--glasses-decore" width="146.3" height="40.375">
+              <svg class="header__logo header__logo--glasses-decore" width="146" height="40">
                 <use xlink:href="img/sprite.svg#icon-logo-pink-white-desktop"></use>
               </svg>
             </a>
@@ -58,21 +61,21 @@
             <ul class="app__list store-list">
               <li class="store-list__item">
                 <a class="store-list__link" href="https://www.apple.com/icloud/" target="blank" aria-label="Скачать приложение для Apple">
-                  <svg width="46.21" height="56.753">
+                  <svg width="46" height="56">
                     <use xlink:href="img/sprite.svg#icon-logo-apple"></use>
                   </svg>
                 </a>
               </li>
               <li class="store-list__item store-list__item--android">
                 <a class="store-list__link" href="https://play.google.com/store" target="blank" aria-label="Скачать приложение для Android">
-                  <svg width="42.084" height="47.041">
+                  <svg width="42" height="47">
                     <use xlink:href="img/sprite.svg#icon-logo-android"></use>
                   </svg>
                 </a>
               </li>
               <li class="store-list__item store-list__item--microsoft">
                 <a class="store-list__link" href="https://www.microsoft.com/ru-ru/store/apps" target="blank" aria-label="Скачать приложение для Microsoft">
-                  <svg width="43.922" height="41.992">
+                  <svg width="44" height="41">
                     <use xlink:href="img/sprite.svg#icon-logo-microsoft"></use>
                   </svg>
                 </a>
@@ -140,15 +143,9 @@
           </ul>
 
           <div class="reviews__bullets bullets">
-            <button class="bullets__button bullets__button--1 bullets__button--active" aria-label="Переключить на первый отзыв">
-              <span class="bullets__point"></span>
-            </button>
-            <button class="bullets__button bullets__button--2" aria-label="Переключить на второй отзыв">
-              <span class="bullets__point"></span>
-            </button>
-            <button class="bullets__button" aria-label="Переключить на третий отзыв">
-              <span class="bullets__point"></span>
-            </button>
+            <button class="bullets__button bullets__button--active" aria-label="Переключить на первый отзыв"></button>
+            <button class="bullets__button" aria-label="Переключить на второй отзыв"></button>
+            <button class="bullets__button" aria-label="Переключить на третий отзыв"></button>
           </div>
 
           <button class="slider__toggle slider__toggle--prev" aria-label="Перейти к предыдущему отзыву"></button>
@@ -182,17 +179,17 @@
                   <p class="tariffs-table__name">Розовый фильтр</p>
                 </td>
                 <td class="tariffs-table__option tariffs-table__option--pink" data-filter="Розовый фильтр">
-                  <svg class="tariffs-table__img-yes" width="21.698" height="16.09">
+                  <svg class="tariffs-table__img-yes" width="22" height="16">
                     <use  xlink:href="img/sprite.svg#icon-yes"></use>
                   </svg>
                 </td>
                 <td class="tariffs-table__option tariffs-table__option--pink" data-filter="Розовый фильтр">
-                  <svg class="tariffs-table__img-yes" width="21.698" height="16.09">
+                  <svg class="tariffs-table__img-yes" width="22" height="16">
                     <use  xlink:href="img/sprite.svg#icon-yes"></use>
                   </svg>
                 </td>
                 <td class="tariffs-table__option tariffs-table__option--pink" data-filter="Розовый фильтр">
-                  <svg class="tariffs-table__img-yes" width="21.698" height="16.09">
+                  <svg class="tariffs-table__img-yes" width="22" height="16">
                     <use  xlink:href="img/sprite.svg#icon-yes"></use>
                   </svg>
                 </td>
@@ -202,17 +199,17 @@
                   <p class="tariffs-table__name">Смайлики</p>
                 </td>
                 <td class="tariffs-table__option tariffs-table__option--smile" data-filter="Смайлики">
-                  <svg class="tariffs-table__img-no" width="26.752" height="26.752">
+                  <svg class="tariffs-table__img-no" width="27" height="27">
                     <use  xlink:href="img/sprite.svg#icon-no"></use>
                   </svg>
                 </td>
                 <td class="tariffs-table__option tariffs-table__option--smile" data-filter="Смайлики">
-                  <svg class="tariffs-table__img-yes" width="21.698" height="16.09">
+                  <svg class="tariffs-table__img-yes" width="22" height="16">
                     <use  xlink:href="img/sprite.svg#icon-yes"></use>
                   </svg>
                 </td>
                 <td class="tariffs-table__option tariffs-table__option--smile" data-filter="Смайлики">
-                  <svg class="tariffs-table__img-yes" width="21.698" height="16.09">
+                  <svg class="tariffs-table__img-yes" width="22" height="16">
                     <use  xlink:href="img/sprite.svg#icon-yes"></use>
                   </svg>
                 </td>
@@ -222,17 +219,17 @@
                   <p class="tariffs-table__name">Комментарии</p>
                 </td>
                 <td class="tariffs-table__option tariffs-table__option--comment" data-filter="Комментарии">
-                  <svg class="tariffs-table__img-no" width="26.752" height="26.752">
+                  <svg class="tariffs-table__img-no" width="27" height="27">
                     <use  xlink:href="img/sprite.svg#icon-no"></use>
                   </svg>
                 </td>
                 <td class="tariffs-table__option tariffs-table__option--comment" data-filter="Комментарии">
-                  <svg class="tariffs-table__img-no" width="26.752" height="26.752">
+                  <svg class="tariffs-table__img-no" width="27" height="27">
                     <use  xlink:href="img/sprite.svg#icon-no"></use>
                   </svg>
                 </td>
                 <td class="tariffs-table__option tariffs-table__option--comment" data-filter="Комментарии">
-                  <svg class="tariffs-table__img-yes" width="21.698" height="16.09">
+                  <svg class="tariffs-table__img-yes" width="22" height="16">
                     <use  xlink:href="img/sprite.svg#icon-yes"></use>
                   </svg>
                 </td>
@@ -242,15 +239,9 @@
         </div>
 
         <div class="price__bullets bullets">
-          <button class="bullets__button" aria-label="Переключить на первый отзыв">
-            <span class="bullets__point"></span>
-          </button>
-          <button class="bullets__button bullets__button--active" aria-label="Переключить на второй отзыв">
-            <span class="bullets__point"></span>
-          </button>
-          <button class="bullets__button" aria-label="Переключить на третий отзыв">
-            <span class="bullets__point"></span>
-          </button>
+          <button class="bullets__button" aria-label="Переключить на первый отзыв"></button>
+          <button class="bullets__button bullets__button--active" aria-label="Переключить на второй отзыв"></button>
+          <button class="bullets__button" aria-label="Переключить на третий отзыв"></button>
         </div>
       </section>
 
@@ -295,10 +286,10 @@
     <footer class="footer footer--index">
       <div class="footer__wrap">
         <a class="footer__logo" href="index.html" aria-label="Логотип фотоприложения Pink">
-          <svg class="footer__img footer__img--glasses" width="146.3" height="40.375">
+          <svg class="footer__img footer__img--glasses" width="146" height="40">
             <use  xlink:href="img/sprite.svg#icon-logo-pink-blue-mobile"></use>
           </svg>
-          <svg class="footer__img footer__img--glasses-decore" width="146.3" height="40.375">
+          <svg class="footer__img footer__img--glasses-decore" width="146" height="40">
             <use  xlink:href="img/sprite.svg#icon-logo-pink-blue-desktop"></use>
           </svg>
         </a>
@@ -306,21 +297,21 @@
         <ul class="footer__list social-list">
           <li class="social-list__item social-list__item--tw">
             <a class="social-list__link" href="#" aria-label="Pink в Твиттере">
-              <svg class="social-list__icon" width="17.5" height="14.663">
+              <svg class="social-list__icon" width="18" height="15">
                 <use  xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item social-list__item--fb">
             <a class="social-list__link" href="#" aria-label="Pink в Фейсбуке">
-              <svg class="social-list__icon social-list__icon--fb" width="8.673" height="18.944">
+              <svg class="social-list__icon social-list__icon--fb" width="9" height="19">
                 <use  xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item social-list__item--you">
             <a class="social-list__link" href="#" aria-label="Pink в Ютюбе">
-              <svg class="social-list__icon social-list__icon--you" width="14.64" height="13.96">
+              <svg class="social-list__icon social-list__icon--you" width="15" height="14">
                 <use  xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
@@ -330,7 +321,7 @@
         <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="Сcылка на HTML Academy">
-            <svg class="copyright__icon" width="26.943" height="34.09">
+            <svg class="copyright__icon" width="27" height="34">
               <use  xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
@@ -338,7 +329,7 @@
       </div>
     </footer>
 
-    <script src="js/main-nav.js"></script>
+    <script src="js/main-nav.min.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/svgxuse.min.js"></script>
   </body>
