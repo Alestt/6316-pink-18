@@ -65,7 +65,9 @@
         </header>
         <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="competition__fieldset user user--name">
-            <legend class="visually-hidden">Ваше полное имя</legend>
+            <legend class="visually-hidden">
+              <span class="user__text">Ваше полное имя</span>
+            </legend>
             <ul class="user__list">
               <li class="user__item">
                 <label class="user__label" for="user-surname">Фамилия:</label>
@@ -83,7 +85,9 @@
           </fieldset>
 
           <fieldset class="competition__fieldset trip trip--achievement">
-            <legend class="trip__legend trip__legend--achievement">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="trip__legend trip__legend--achievement">
+              <span class="trip__text">Ваши безбашенные достижения в путешествии</span>
+            </legend>
             <ul class="trip__list trip__list--achievement">
               <li class="trip__item trip__item--achievement trip__item--shark">
                 <input class="trip__input trip__input--achievement visually-hidden" id="shark-trip" type="checkbox" name="shark-trip" checked>
@@ -113,7 +117,9 @@
           </fieldset>
 
           <fieldset class="competition__fieldset user user--contacts">
-            <legend class="user__legend user__legend--contacts">Контактная информация</legend>
+            <legend class="user__legend user__legend--contacts">
+              <span class="user__text">Контактная информация</span>
+            </legend>
             <ul class="user__list user__list--contacts">
               <li class="user__item user__item--contacts">
                 <label class="user__label user__label--contacts" for="user-phone">Номер телефона</label>
@@ -127,7 +133,9 @@
           </fieldset>
 
           <fieldset class="competition__fieldset trip trip--app">
-            <legend class="trip__legend trip__legend--app">С каким приложением путешествовали?</legend>
+            <legend class="trip__legend trip__legend--app">
+              <span class="trip__text">С каким приложением путешествовали?</span>
+            </legend>
             <ul class="trip__list trip__list--app">
               <li class="trip__item trip__item--app">
                 <input class="trip__input trip__input--app visually-hidden" id="version-ios" type="radio" name="app-version" checked>
@@ -145,7 +153,9 @@
           </fieldset>
 
           <fieldset class="competition__fieldset user user--comment">
-            <legend class="user__legend">Опишите свои эмоции</legend>
+            <legend class="user__legend">
+              <span class="user__text">Опишите свои эмоции</span>
+            </legend>
             <div class="user__wrap">
               <label class="visually-hidden" for="user-comment">Комментарии о нашем приложении</label>
               <textarea class="user__textarea" id="user-comment" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -200,7 +210,7 @@
 
         <div class="footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" target="blank" aria-label="Сcылка на HTML Academy">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank" aria-label="Сcылка на HTML Academy">
             <svg class="copyright__icon" width="27" height="34">
               <use  xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>

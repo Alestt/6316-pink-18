@@ -1,21 +1,23 @@
 .trip {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 24px;
   padding: 0;
-  padding-top: 98px;
+  padding-top: 44px;
   background-color: @light-grey;
   border: none;
 
   &--app {
     margin-top: 2px;
-    padding-top: 94px;
+    padding-top: 39px;
   }
 
   @media (min-width: @tablet) {
     width: 620px;
     margin: 0 auto;
-    margin-bottom: 57px;
+    margin-bottom: 56px;
     padding-top: 43px;
     background-color: @white;
     border: solid 2px @grey;
@@ -43,31 +45,39 @@
       width: 100%;
       margin: 0;
       margin-bottom: 57px;
+      padding-top: 45px;
     }
   }
 }
 
 .trip__legend {
-  position: relative;
-  top: 55px;
-  width: 240px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-top: 38px;
   font-size: 14px;
   line-height: 18px;
-  color: @pink;
   text-align: center;
   text-transform: uppercase;
+  color: @pink;
+  background-color: @light-grey;
+
+  @media (max-width: @mobile) {
+    width: 100%;
+  }
 
   @media (min-width: @tablet) {
+    min-width: 185px;
     line-height: 30px;
-    top: 0;
+    background-color: transparent;
 
     &--app {
-      width: 368px;
+      padding: 0 25px;
     }
 
     &--achievement {
-      width: 436px;
+      padding: 0 32px;
     }
   }
 
@@ -75,6 +85,14 @@
     &--app {
       margin-bottom: 45px;
     }
+  }
+}
+
+.trip__text {
+  max-width: 250px;
+
+  @media (min-width: @tablet) {
+    max-width: 100%;
   }
 }
 
@@ -117,7 +135,7 @@
 
 .trip__item {
   &:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
 
     @media (min-width: @tablet) {
       margin-bottom: 45px;
@@ -131,7 +149,7 @@
   }
 
   &--app:not(:last-child) {
-    margin-bottom: 43px;
+    margin-bottom: 44px;
   }
 
   @media (min-width: @tablet) {
@@ -251,7 +269,7 @@
     left: -61px;
     width: 22px;
     height: 16px;
-    background-image: url("../img/icon-yes.svg");
+    background-image: url("../img/icon-yes-pink.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 

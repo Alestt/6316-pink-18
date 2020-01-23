@@ -25,10 +25,21 @@
 .upload__wrap {
   width: 280px;
   margin: 0 auto;
-  padding-top: 20px;
 
   @media (min-width: @tablet) {
     width: 620px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 940px;
+    padding-left: 20px;
+  }
+}
+
+.upload__form {
+  padding-top: 20px;
+
+  @media (min-width: @tablet) {
     padding-top: 57px;
     padding-bottom: 54px;
     display: flex;
@@ -38,9 +49,8 @@
 
   @media (min-width: @desktop) {
     box-sizing: border-box;
-    width: 922px;
     margin-bottom: 50px;
-    padding-right: 40px;
+    padding-right: 60px;
     padding-bottom: 57px;
     padding-left: 80px;
     background-color: @light-grey;
