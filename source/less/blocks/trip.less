@@ -116,11 +116,11 @@
 
   @media (min-width: @desktop) {
     width: 435px;
+    box-sizing: border-box;
 
     &--app {
       padding-bottom: 0;
       padding-left: 77px;
-      box-sizing: border-box;
     }
 
     &--achievement {
@@ -166,38 +166,51 @@
     &--app:not(:last-child) {
       margin-bottom: 44px;
     }
+    width: 260px;
+    order: 10;
 
-    &--achievement {
-      width: 245px;
-      margin-bottom: 52px;
+    &:nth-child(3n) {
+      width: 210px;
     }
 
-    &--shark {
+    &:nth-child(3n-1) {
+      width: 240px;
+    }
+
+    &:nth-child(1) {
       order: 1;
-      width: 265px;
     }
 
-    &--beach {
-      order: 4;
-      width: 265px;
-    }
-
-    &--сhuck {
+    &:nth-child(3) {
+      width: 240px;
       order: 2;
     }
 
-    &--souvenir {
+    &:nth-child(4) {
+      width: 240px;
       order: 5;
     }
 
-    &--tower {
+    &:nth-child(5) {
+      width: 210px;
       order: 3;
+    }
+
+    &:nth-child(2) {
+      width: 260px;
+      order: 4;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
+
+    &:last-child {
       width: 210px;
     }
 
-    &--hotel {
-      order: 6;
-      width: 210px;
+    &--achievement {
+      margin-bottom: 52px;
     }
   }
 }
